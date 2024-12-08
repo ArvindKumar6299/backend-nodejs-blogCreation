@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs') %>
+    <title>Blog</title>
+</head>
+<body>
+  <img src="try.png" alt="check"/>
+
+    <%- include('./partials/nav.ejs') %>
+
+  <div class="container">
+    <h1><%= blog.title %></h1>
+    <!-- <img src="https://www.bing.com/th?id=OIP.GPFEY6kfgxbsja6gmrW6rwHaE7&w=144&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="onile"> -->
+    <img src="<%= blog.coverImageURL %>" alt="try"/>
+    
+    <p><%= blog.body %></p>
+  </div>
+    <%- include('./partials/scripts.ejs') %>
+</body>
+</html>    
